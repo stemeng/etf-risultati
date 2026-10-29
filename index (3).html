@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ETF europei</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+.contenitore { overflow-x: auto; }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    white-space: nowrap;
+}
+th, td {
+    padding: 11px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: right;
+}
+thead th {
+    background: #edf2f7;
+    color: #243b53;
+}
+th:nth-child(-n+2), td:nth-child(-n+2) {
+    text-align: left;
+}
+tbody tr:nth-child(even) { background: #f8fafc; }
+tbody tr:hover { background: #eef4fa; }
+</style>
+</head>
+<body>
+<div class="contenitore">
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ETF</th>
+      <th>Descrizione</th>
+      <th>Alpha mensile (%)</th>
+      <th>Mercato</th>
+      <th>Size</th>
+      <th>Value</th>
+      <th>Redditività</th>
+      <th>Investimento</th>
+      <th>R²</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EXSA.DE</td>
+      <td>STOXX Europe 600</td>
+      <td>0.063</td>
+      <td>0.980***</td>
+      <td>-0.082</td>
+      <td>0.029</td>
+      <td>-0.009</td>
+      <td>-0.039</td>
+      <td>0.960</td>
+    </tr>
+    <tr>
+      <td>EXSC.DE</td>
+      <td>Europe Large 200</td>
+      <td>0.131</td>
+      <td>0.937***</td>
+      <td>-0.196***</td>
+      <td>0.016</td>
+      <td>0.044</td>
+      <td>-0.022</td>
+      <td>0.957</td>
+    </tr>
+    <tr>
+      <td>EXSD.DE</td>
+      <td>Europe Mid 200</td>
+      <td>-0.122</td>
+      <td>1.097***</td>
+      <td>0.320***</td>
+      <td>0.053</td>
+      <td>-0.125</td>
+      <td>-0.020</td>
+      <td>0.935</td>
+    </tr>
+    <tr>
+      <td>EXSE.DE</td>
+      <td>Europe Small 200</td>
+      <td>-0.091</td>
+      <td>1.136***</td>
+      <td>0.675***</td>
+      <td>0.040</td>
+      <td>-0.115</td>
+      <td>-0.183</td>
+      <td>0.934</td>
+    </tr>
+    <tr>
+      <td>EXSH.DE</td>
+      <td>Europe Select Dividend 30</td>
+      <td>-0.004</td>
+      <td>0.980***</td>
+      <td>0.480***</td>
+      <td>0.578***</td>
+      <td>-0.154</td>
+      <td>-0.138</td>
+      <td>0.898</td>
+    </tr>
+    <tr>
+      <td>EXV1.DE</td>
+      <td>Banche</td>
+      <td>0.241</td>
+      <td>1.194***</td>
+      <td>-0.313</td>
+      <td>1.116***</td>
+      <td>-0.882***</td>
+      <td>-0.780**</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>EXV2.DE</td>
+      <td>Telecomunicazioni</td>
+      <td>-0.363</td>
+      <td>0.837***</td>
+      <td>0.096</td>
+      <td>0.029</td>
+      <td>-0.284</td>
+      <td>0.673</td>
+      <td>0.410</td>
+    </tr>
+    <tr>
+      <td>EXV3.DE</td>
+      <td>Tecnologia</td>
+      <td>1.298**</td>
+      <td>0.978***</td>
+      <td>-0.237</td>
+      <td>-0.711***</td>
+      <td>-0.886**</td>
+      <td>-1.428***</td>
+      <td>0.785</td>
+    </tr>
+    <tr>
+      <td>EXV4.DE</td>
+      <td>Salute</td>
+      <td>-0.043</td>
+      <td>0.715***</td>
+      <td>-0.242</td>
+      <td>-0.400**</td>
+      <td>0.500*</td>
+      <td>0.667**</td>
+      <td>0.589</td>
+    </tr>
+    <tr>
+      <td>EXV5.DE</td>
+      <td>Automobili e componenti</td>
+      <td>-1.516**</td>
+      <td>1.223***</td>
+      <td>-0.183</td>
+      <td>0.601*</td>
+      <td>0.018</td>
+      <td>-0.704</td>
+      <td>0.617</td>
+    </tr>
+    <tr>
+      <td>EXV6.DE</td>
+      <td>Risorse di base</td>
+      <td>-0.298</td>
+      <td>1.184***</td>
+      <td>0.379</td>
+      <td>0.685*</td>
+      <td>0.022</td>
+      <td>-0.093</td>
+      <td>0.435</td>
+    </tr>
+    <tr>
+      <td>EXV7.DE</td>
+      <td>Chimica</td>
+      <td>-0.601</td>
+      <td>1.011***</td>
+      <td>0.018</td>
+      <td>0.048</td>
+      <td>0.157</td>
+      <td>0.237</td>
+      <td>0.703</td>
+    </tr>
+    <tr>
+      <td>EXV8.DE</td>
+      <td>Costruzioni e materiali</td>
+      <td>0.110</td>
+      <td>1.336***</td>
+      <td>0.290</td>
+      <td>-0.342*</td>
+      <td>-0.130</td>
+      <td>0.560*</td>
+      <td>0.808</td>
+    </tr>
+    <tr>
+      <td>EXH1.DE</td>
+      <td>Petrolio e gas</td>
+      <td>-0.524</td>
+      <td>0.667***</td>
+      <td>0.203</td>
+      <td>1.418***</td>
+      <td>0.898**</td>
+      <td>0.239</td>
+      <td>0.499</td>
+    </tr>
+    <tr>
+      <td>EXH2.DE</td>
+      <td>Servizi finanziari</td>
+      <td>0.442</td>
+      <td>1.135***</td>
+      <td>0.382*</td>
+      <td>-0.242</td>
+      <td>-0.484*</td>
+      <td>-0.231</td>
+      <td>0.746</td>
+    </tr>
+    <tr>
+      <td>EXH3.DE</td>
+      <td>Alimentari e bevande</td>
+      <td>-0.829**</td>
+      <td>0.861***</td>
+      <td>-0.187</td>
+      <td>-0.361*</td>
+      <td>0.675**</td>
+      <td>1.059***</td>
+      <td>0.603</td>
+    </tr>
+    <tr>
+      <td>EXH4.DE</td>
+      <td>Beni e servizi industriali</td>
+      <td>0.562*</td>
+      <td>1.236***</td>
+      <td>0.311*</td>
+      <td>-0.092</td>
+      <td>0.014</td>
+      <td>-0.360</td>
+      <td>0.860</td>
+    </tr>
+    <tr>
+      <td>EXH5.DE</td>
+      <td>Assicurazioni</td>
+      <td>-0.018</td>
+      <td>0.807***</td>
+      <td>-0.410**</td>
+      <td>0.238</td>
+      <td>-0.438</td>
+      <td>0.221</td>
+      <td>0.581</td>
+    </tr>
+    <tr>
+      <td>EXH9.DE</td>
+      <td>Utilities</td>
+      <td>0.325</td>
+      <td>0.940***</td>
+      <td>0.167</td>
+      <td>-0.230</td>
+      <td>0.319</td>
+      <td>0.969**</td>
+      <td>0.496</td>
+    </tr>
+    <tr>
+      <td>EXI5.DE</td>
+      <td>Immobiliare</td>
+      <td>-1.045*</td>
+      <td>1.417***</td>
+      <td>0.690**</td>
+      <td>0.173</td>
+      <td>-0.294</td>
+      <td>-0.338</td>
+      <td>0.668</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
